@@ -22,7 +22,7 @@ This file defines the base URLs used throughout the Omise Dart SDK for API calls
 
 **Changes to Block (Red Flag):**
 
-- Any change introducing a non-omise.co domain for production endpoints
+- Any change introducing a non omise.co domain for production endpoints
 - Hardcoding non-production Omise URLs in production code paths (regex: `https?://[a-zA-Z0-9.-]*omise[a-zA-Z0-9.-]*(?<!omise\.co)`)
 - Changing `Environment.production` to return anything other than official omise.co domains:
   - `https://api.omise.co`
