@@ -68,7 +68,7 @@ class ChargesMock {
               "/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo",
           "kind": "qr",
           "download_uri":
-              "https://api.staging-omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F",
+              "https://api.omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F",
           "created_at": "2025-04-17T12:41:52Z"
         },
         "raw_data": null
@@ -103,7 +103,7 @@ class ChargesMock {
     "failure_message": null,
     "status": "pending",
     "authorize_uri":
-        "https://pay.staging-omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false",
+        "https://pay.omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false",
     "return_uri": "https://www.example.com/complete/success",
     "created_at": "2025-04-17T12:41:51Z",
     "paid_at": null,
@@ -200,7 +200,7 @@ class ChargesMock {
               "/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo",
           "kind": "qr",
           "download_uri":
-              "https://api.staging-omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F",
+              "https://api.omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F",
           "created_at": "2025-04-17T12:41:52Z"
         },
         "raw_data": null
@@ -235,7 +235,7 @@ class ChargesMock {
     "failure_message": null,
     "status": "pending",
     "authorize_uri":
-        "https://pay.staging-omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false",
+        "https://pay.omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false",
     "return_uri": "https://www.example.com/complete/success",
     "created_at": "2025-04-17T12:41:51Z",
     "paid_at": null,

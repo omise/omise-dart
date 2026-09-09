@@ -24,7 +24,7 @@ void main() {
       expect(charge.expiresAt?.toIso8601StringWithoutMilliseconds(),
           '2025-04-17T12:46:51Z');
       expect(charge.authorizeUri,
-          'https://pay.staging-omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false');
+          'https://pay.omise.co/payments/pay2_63f4bvogrbd77greqd8/authorize?acs=false');
 
       // Source
       expect(charge.source, isNotNull);
@@ -43,7 +43,7 @@ void main() {
       expect(image, isNotNull);
       expect(image!.id, 'docu_63f4bvwudrafxihuyxo');
       expect(image.downloadUri,
-          'https://api.staging-omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F');
+          'https://api.omise.co/charges/chrg_63f4bvoea7xdc1je2ry/documents/docu_63f4bvwudrafxihuyxo/downloads/23F760B90243FD8F');
     });
 
     test('Charge toJson() should serialize correctly', () {

@@ -1,0 +1,27 @@
+title = "Omise Dart Gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "non-production-omise-host"
+description = "Non-production Omise host"
+regex = '''(?:https?://)?((?:\b[a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]*omise[a-zA-Z0-9-]*\.co)'''
+secretGroup = 1
+
+  [[rules.allowlists]]
+  description = "Official Omise hosts"
+  regexes = [
+    '''^([A-Za-z0-9-]+\.)*omise\.co$''',
+  ]
+
+[[allowlists]]
+description = "Ignored generated files"
+paths = ['''^\.dart_tool/''']
+
+[[allowlists]]
+description = "Ignore test tokens and mock credentials"
+regexTarget = "match"
+regexes = [
+  '''tokn_test_[a-zA-Z0-9]+''',
+]
